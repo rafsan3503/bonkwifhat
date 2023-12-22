@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>$BIF</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />-->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="logo.jpg" />
+    <link rel="apple-touch-icon" sizes="180x180" href="logo.jpg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo.jpg" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo.jpg" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.squareble.com/squareble/templates/generic/css-22.64/2.b39fcc0b.chunk.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.squareble.com/squareble/templates/generic/css-22.64/main.b8d835e4.chunk.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.squareble.com/squareble/templates/generic/css-22.61/generic.css"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f2dfc6;
+      }
+      .hypno {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+      }
+
+      .circles {
+        margin: auto auto;
+        width: 100px;
+        height: 100px;
+        border: 5px solid orange;
+        border-radius: 50%;
+        item-align: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+      }
+      .one {
+        animation: circles 2.4s infinite linear;
+      }
+      .two {
+        animation: circles 2.4s infinite linear;
+        animation-delay: 0.6s;
+      }
+      .three {
+        animation: circles 2.4s infinite linear;
+        animation-delay: 1.2s;
+      }
+      .four {
+        animation: circles 2.4s infinite linear;
+        animation-delay: 1.8s;
+      }
+      .five {
+        animation: circles 2.4s infinite linear;
+        animation-delay: 2.4s;
+      }
+      .six {
+        animation: circles 2.4s infinite linear;
+        animation-delay: 3s;
+      }
+      .seven {
+        animation: circles 2.4s infinite linear;
+        animation-delay: 3.6s;
+      }
+      .eight {
+        animation: circles 2.4s infinite linear;
+        animation-delay: 4.2s;
+      }
+      .nine {
+        animation: circles 2.4s infinite linear;
+        animation-delay: 4.8s;
+      }
+      @keyframes circles {
+        from {
+          transform: scale(0.1);
+          display: none;
+        }
+        to {
+          transform: scale(15);
+        }
+      }
+      #hero,
+      #social,
+      #about,
+      #tokenomic {
+        background-color: transparent !important;
+      }
+      #hero .container .row:nth-child(2),
+      #hero .container .row:nth-child(3) {
+        display: none;
+      }
+      #hero.linkbio-1 .linkbio-logo {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      #social .swiper-slide .col {
+        text-align: center;
+      }
+      #social.features-8 .top-level a {
+        display: inline-block;
+      }
+      #social.features-8 .top-level img {
+        width: 100px;
+        height: 100px;
+      }
+      #hero {
+        padding-bottom: 0;
+      }
+      #social {
+        padding-top: 0;
+      }
+      #about {
+        padding-top: 0;
+      }
+      #about .pre-title {
+        border: 3px solid #000000;
+        padding: 20px;
+        background-color: #333333;
+        margin-bottom: 100px;
+      }
+      #about .pre-title .mb-3 {
+        margin-bottom: 0 !important;
+      }
+      h1,
+      h2,
+      h3,
+      p {
+        font-family: "Press Start 2P";
+      }
+      .btn-ok {
+        display: block;
+        margin: 20px auto auto;
+      }
+      @media screen and (max-width: 575px) {
+        #hero {
+          padding-top: 190px;
+        }
+      }
+
+      .text.section {
+        padding-top: 30px;
+        padding-bottom: 80px;
+      }
+
+      #cool{
+  fill:none;
+}
+textPath{
+  font-size:50px;
+  text-transform: capitalize;
+  font-family: 'Fredoka One', cursive;
+  fill:orange;
+}
+
+.text_path{
+   max-width: 580px;
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    top: 6%;
+    z-index: 2;
+}
+
+@media screen and (max-width:768px){
+.text_path {
+    max-width: 580px;
+    width: 100%;
+    height: 190px;
+    position: absolute;
+    top: 1%;
+    z-index: 2;
+    left: -9%;
+}
+}
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <content class="content">
+        <section
+          id="hero"
+          class="section linkbio linkbio-1"
+          style="
+            
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        >
+          <div class="container">
+            
+            <div class="row">
+              <div class="mx-auto col-lg-6 col-md-10">
+                <div class="css-1gzxeik" style="position: relative;">
+                   <svg class="text_path" xmlns="http://www.w3.org/2000/svg">
+                    
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  
+  
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>cool</title>
+ <path id="cool" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+ </g>
+   <text width="700">
+      <textPath xlink:href="#cool">
+       BonkWifHat
+      </textPath>
+    </text>
+ </g>
+</svg>
+                  <div class="d-flex justify-content-center">
+                    
+                    <div
+                      class="linkbio-logo embed-responsive embed-responsive-1by1"
+                    >
+                   
+                      <img
+                        class="embed-responsive-item"
+                        src="logo.jpg"
+                        alt="Logo"
+                      />
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="mt-5 mb-4 d-flex justify-content-center">
+                  <div class="css-1qm2s7g">
+                    <div class="Socials"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="divider-row row">
+              <div class="col">
+                <div class="css-p7x6sr">
+                  <div class="divider undefined"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="text-center mt-3 col">
+                <div class="css-1gii3vc">
+                  <p class="copyright">Copyright © 2023 - LFG</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+<!-- <section style="text-align: center;">
+  <img style="height: 500px; width: 550px;" src="./lfg.png" alt="">
+</section> -->
+        <section
+          id="social"
+          class="section features-8"
+          style="
+            background-color: #ffffff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        >
+          <div class="container">
+            <div class="header-row row">
+              <div class="col-12">
+                <div class="grid-wrapper">
+                  <div class="css-1gzxeik">
+                    <div class="normal-text text-left mb-4"></div>
+                  </div>
+                  <div class="css-1gzxeik">
+                    <div class="title"></div>
+                  </div>
+                  <div class="css-1gzxeik">
+                    <div class="normal-text description"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="slider-row row">
+              <div class="p-0 col col">
+                <div class="slider slider-8">
+                  <div class="swiper-container swiper-container--slider-8">
+                    <div class="swiper-wrapper d-flex flex-wrap swiper-wrapper">
+                      <div
+                        class="swiper-slide col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                      >
+                        <div class="flex-column">
+                          <div class="col-lg-12 item col px-0">
+                            <div class="feature mb-4">
+                              <div class="top-level row">
+                                <div class="col">
+                                  <a href="chartlink">
+                                    <img
+                                      src="https://cdn.squareble.com/squareble/media/07d109b6-f897-46ce-b322-145e49e0b934/de6a2924-c7a1-49fe-a17d-875443c0ee60.webp"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="bottom-level row">
+                                <div class="col">
+                                  <p style="text-align: center">Chart</p>
+                                  <div
+                                    class="normal-text text-left description"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-slide col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                      >
+                        <div class="flex-column">
+                          <div class="col-lg-12 item col px-0">
+                            <div class="feature mb-4">
+                              <div class="top-level row">
+                                <div class="col">
+                                  <a href="twitterlink">
+                                    <img
+                                      src="https://cdn.squareble.com/squareble/media/07d109b6-f897-46ce-b322-145e49e0b934/fe4b7b55-849a-4d88-8e31-e217f95eb4c5.png"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="bottom-level row">
+                                <div class="col">
+                                  <p style="text-align: center">Twitter</p>
+                                  <div
+                                    class="normal-text text-left description"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="swiper-slide col-lg-4 col-md-6 col-sm-12 col-xs-12"
+                      >
+                        <div class="flex-column">
+                          <div class="col-lg-12 item col px-0">
+                            <div class="feature mb-4">
+                              <div class="top-level row">
+                                <div class="col">
+                                  <a href="tglink">
+                                    <img
+                                      src="https://cdn.squareble.com/squareble/media/07d109b6-f897-46ce-b322-145e49e0b934/0ce1b9e0-df37-4e29-b77e-d697ae240417.webp"
+                                    />
+                                  </a>
+                                </div>
+                              </div>
+                              <div class="bottom-level row">
+                                <div class="col">
+                                  <p style="text-align: center">Telegram</p>
+                                  <div
+                                    class="normal-text text-left description"
+                                  ></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-pagination swiper-pagination--slider-8"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="about"
+          class="section text text-4"
+          style="
+            background-color: #ffffff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        >
+          <div class="grid-wrapper">
+            <div class="container">
+              <div class="w-100">
+                <div class="css-1gzxeik">
+                  <div class="css-1gzxeik">
+                    <div class="pre-title">
+                      <div class="normal-text mb-3">
+                        <p style="text-align: center">
+                          <span style="color: #ffffff"
+                            >0x000000000000000000000</span
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="css-1gzxeik">
+                  <div class="mb-3">
+                    <div class="title">
+                      <h1 style="text-align: center">
+                        <span style="color: rgb(0, 0, 0)">$BIF</span>
+                      </h1>
+                    </div>
+                    <div class="normal-text description">
+                      <p style="text-align: center">
+                        <span style="color: rgb(0, 0, 0)"
+                          >LFG is an ERC20 token created in response to Elon's recent headline news, where he used explicit language to convey his feelings on live television. $BIF is an initiative with the same ethos, and the same emotions, pushing a more positive narrative. LFG, or Let's Fucking Go, is a popular term used across financial markets to express excitement. Now, the crypto community has something to really rally behind.</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="tokenomic"
+          class="section text text-4"
+          style="
+            background-color: #ffffff;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          "
+        >
+          <div class="grid-wrapper">
+            <div class="container">
+              <div class="w-100">
+                <div class="css-1gzxeik">
+                  <div class="css-1gzxeik">
+                    <div class="pre-title">
+                      <div class="normal-text mb-3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="css-1gzxeik">
+                  <div class="mb-3">
+                    <div class="title">
+                      <h1 style="text-align: center">Tokenomic</h1>
+                    </div>
+                    <div class="normal-text description">
+                      <p style="text-align: center">
+                        Supply : 1B Supply<br />Tax Final : 0 / 0<br />LP
+                        Burnt &amp; Renounced
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </content>
+    </main>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.squareble.com/squareble/templates/generic/js-22.65/vendors-3.bundle.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.squareble.com/squareble/templates/generic/js-22.65/vendors-4.bundle.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.squareble.com/squareble/templates/generic/js-22.65/maincore.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.2/howler.core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
+    <script>
+      var body = document.getElementsByTagName("body")[0];
+      var child = document.createElement("div");
+      var child2 = document.createElement("div");
+      child.innerHTML =
+        '<div class="hypno"><div class="circles one"></div><div class="circles two"></div><div class="circles three"></div><div class="circles four"></div><div class="circles five"></div><div class="circles six"></div><div class="circles seven"></div><div class="circles eight"></div><div class="circles nine"></div></div>';
+      child = child.firstChild;
+      body.appendChild(child);
+      sound = new Howl({
+        src: [
+          "https://cdn.squareble.com/squareble/media/07d109b6-f897-46ce-b322-145e49e0b934/61a02812-ca45-4591-9a84-bed923084ac7.mp3",
+        ],
+        loop: true,
+      });
+      const popup = new Popup({
+        id: "popup",
+        title: "",
+        content: `BonkWifHat. $BIF! {btn-red btn-ok}[ENTER]`,
+        showImmediately: true,
+        hideCloseButton: true,
+        loadCallback: () => {
+          const button = document.querySelector(".btn-ok");
+          button.addEventListener("click", () => {
+            sound.play();
+            popup.hide();
+          });
+        },
+      });
+    </script>
+  </body>
+</html>
